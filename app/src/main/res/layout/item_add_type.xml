@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66C0C0C0"
+    android:orientation="vertical"
+    android:paddingHorizontal="10dp"
+    android:paddingVertical="20dp">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Thêm loại sản phẩm"
+        android:textColor="#36c5aa"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/ivImageType"
+        android:layout_width="220dp"
+        android:layout_height="260dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/photo_icon" />
+
+    <EditText
+        android:id="@+id/edtAddNameType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_edittext"
+        android:drawablePadding="10dp"
+        android:hint="Tên loại sản phẩm"
+        android:inputType="text"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="15dp"
+        android:textColor="#B3000000"
+        android:textColorHint="#C0C0C0"
+        android:textSize="14sp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:paddingHorizontal="5dp">
+
+        <TextView
+            android:id="@+id/txtCancelAddType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:text="ĐÓNG"
+            android:textColor="#36c5aa"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:id="@+id/progressBarAddType"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:indeterminateTint="@color/black"
+                android:progressTint="@color/black"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/btnAddTypeSub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button"
+                android:paddingHorizontal="50dp"
+                android:text="Thêm"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

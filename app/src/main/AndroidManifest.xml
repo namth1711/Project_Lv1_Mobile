@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ic_wareflow"
+        android:label="WareFlow"
+        android:roundIcon="@drawable/ic_wareflow"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Project_Lv1_Mobile"
+        tools:targetApi="31">
+        <activity
+            android:name=".PhieuXuatChiTietActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TaoPhieuXuatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuanLyTaiKhoanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoanhThuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LichSuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".XuatActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".NhapActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PhieuNhapChiTietActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TaoPhieuNhapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChonSPNhapXuatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IntroProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManageMemberActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProductTypeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

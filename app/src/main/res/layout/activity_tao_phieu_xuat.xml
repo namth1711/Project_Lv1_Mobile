@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#66C0C0C0"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingHorizontal="10dp"
+    android:paddingVertical="50dp"
+    tools:context=".TaoPhieuXuatActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phiếu Xuất"
+        android:textColor="#36c5aa"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="Mã số:"
+                android:textColor="#36c5aa"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtMaSoPhieuXuat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#36c5aa"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="Người tạo:"
+                android:textColor="#36c5aa"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtNguoiTaoPhieuXuat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#36c5aa"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="Ngày tạo:"
+                android:textColor="#36c5aa"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtNgayXuatPhieu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#36c5aa"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="Tổng sản phẩm:"
+                android:textColor="#36c5aa"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtTongSoSPXuatSub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#36c5aa"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="Tổng tiền chưa thuế:"
+                android:textColor="#36c5aa"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtTongTienXuatTruoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#36c5aa"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="VNĐ"
+                android:textColor="#36c5aa"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Thuế: 10%"
+            android:textColor="#36c5aa"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="Tổng tiền sau thuế:"
+                android:textColor="#36c5aa"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtTongTienXuatSau"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#36c5aa"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="VNĐ"
+                android:textColor="#36c5aa"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ProgressBar
+            android:id="@+id/progressBarPhieuXuat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btnTaoPhieuXuat"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:paddingHorizontal="10dp"
+            android:text="Xác Nhận"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnHuyTaoPhieuXuat"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button"
+        android:text="Hủy"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</LinearLayout>

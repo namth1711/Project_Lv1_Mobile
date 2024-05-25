@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#66C0C0C0"
+    android:orientation="vertical"
+    android:paddingHorizontal="10dp">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/txtFillProductTypeUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#36c5aa"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:background="@drawable/custom_edittext"
+        android:id="@+id/edtProductNameUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Tên sản phẩm"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#C0C0C0"
+        android:textSize="18sp" />
+
+    <EditText
+        android:background="@drawable/custom_edittext"
+        android:id="@+id/edtDonGiaUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Đơn giá"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#C0C0C0"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/spinnerTypeUp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:padding="10dp" />
+
+    <FrameLayout
+        android:id="@+id/frameTrangThaiSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/txtNgungKinhDoanh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngừng Kinh Doanh"
+            android:textColor="#36c5aa"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/txtKinhDoanh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kinh doanh"
+            android:textColor="#36c5aa"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/txtCancelUpProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="ĐÓNG"
+            android:textColor="#36c5aa"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtUpdateProductSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="CẬP NHẬT"
+            android:textColor="#36c5aa"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>

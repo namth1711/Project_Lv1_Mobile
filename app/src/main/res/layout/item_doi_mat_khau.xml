@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingVertical="50dp"
+    android:background="#66C0C0C0"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Đổi Mật Khẩu"
+        android:textStyle="bold"
+        android:textColor="#36c5aa"
+        android:textSize="28sp" />
+
+    <FrameLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:paddingHorizontal="10dp"
+            android:id="@+id/llXacThucTK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtILayoutPassOld"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="Mật khẩu">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtIEdtPassOld"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawablePadding="5dp"
+                    android:inputType="textPassword"
+                    android:padding="12dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp">
+
+                <ProgressBar
+                    android:id="@+id/progressBarXacThuc"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:indeterminateTint="#36c5aa"
+                    android:progressTint="#36c5aa"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/btnXacThuc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/custom_button"
+                    android:paddingHorizontal="40dp"
+                    android:text="Xác thực"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="19sp" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:paddingHorizontal="10dp"
+            android:id="@+id/llDoiMK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtILayoutPassNew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="Mật khẩu mới">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtIEdtPassNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawablePadding="5dp"
+                    android:inputType="textPassword"
+                    android:padding="12dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtILayoutPassNewCon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="Nhập lại">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtIEdtPassNewCon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawablePadding="5dp"
+                    android:inputType="textPassword"
+                    android:padding="12dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp">
+
+                <ProgressBar
+                    android:id="@+id/progressBarXacNhan"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:indeterminateTint="#36c5aa"
+                    android:progressTint="#36c5aa"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/btnXacNhan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/custom_button"
+                    android:paddingHorizontal="40dp"
+                    android:text="Xác Nhận"
+                    android:textColor="@color/white"
+                    android:textSize="19sp" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txtCancelEditPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Đóng"
+        android:textAllCaps="true"
+        android:textColor="#33bb9f"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

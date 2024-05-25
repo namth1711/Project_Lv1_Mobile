@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="#66C0C0C0"
+    android:orientation="vertical"
+    android:paddingVertical="50dp">
+
+    <Button
+        android:id="@+id/btnChinhSuaThongTin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_button"
+        android:gravity="center|left"
+        android:paddingHorizontal="20dp"
+        android:text="Chỉnh sửa thông tin"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/btnDoiMatKhau"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_button"
+        android:gravity="center|left"
+        android:paddingHorizontal="20dp"
+        android:text="Đổi mật khẩu"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/txtCancelLuaChonEditTK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="ĐÓNG"
+        android:textColor="#36c5aa"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
